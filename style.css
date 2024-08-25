@@ -1,12 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
   background-color: #0f172a;
   color: white;
-  min-height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #slider {
@@ -28,6 +45,23 @@ body {
 
 .animation {
   animation: fade 0.3s forwards;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  background: linear-gradient(to right, #e6dada, #568a97);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition-duration: 0.6s;
+}
+footer a:hover {
+  font-size: 2rem;
 }
 
 @keyframes fade {
